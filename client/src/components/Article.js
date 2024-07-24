@@ -12,11 +12,11 @@ const Article = () => {
   }, [id]);
 
   if (!article) {
-    return <div>Loading...</div>;
+    return <div className="container my-4">Loading...</div>;
   }
 
   return (
-    <div>
+    <div className="container my-4">
       <h2>{article.title}</h2>
       <p>{article.content}</p>
     </div>

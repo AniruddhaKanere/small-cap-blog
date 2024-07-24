@@ -11,11 +11,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Blog Articles</h2>
-      <ul>
+    <div className="container" >
+      <h2 className="my-4" >Blog Articles</h2>
+      <ul className="list-group" >
         {articles.map(article => (
-          <li key={article.id}>
+          <li key={article.id} className="list-group-item" >
             <Link to={`/article/${article.id}`}>{article.title}</Link>
           </li>
         ))}
